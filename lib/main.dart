@@ -4,7 +4,6 @@ import 'package:proyecto_atm/views/login_view.dart';
 
 void main() {
   runApp(const MyApp());
- 
 }
 
 class MyApp extends StatelessWidget {
