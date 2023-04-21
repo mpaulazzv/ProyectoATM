@@ -3,8 +3,9 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:proyecto_atm/views/ingresarD_view.dart';
 import 'package:proyecto_atm/views/login_view.dart';
-import 'package:proyecto_atm/views/enviarD.dart';
+import 'package:proyecto_atm/views/enviarD_view.dart';
 
 class Menu extends StatefulWidget {
   const Menu({super.key});
@@ -26,14 +27,14 @@ class _MenuState extends State<Menu> {
                 ClipPath(
                   clipper: WaveClipper(),
                   child: Container(
-                    color: Color.fromRGBO(248, 187, 237, 97),
+                    color: Color.fromRGBO(241, 193, 233, 1),
                     height: 120,
                   ),
                 ),
                 ClipPath(
                   clipper: WaveClipper(),
                   child: Container(
-                    color: Color.fromRGBO(110, 126, 228, 89),
+                    color: Color.fromRGBO(140, 151, 223, 1),
                     height: 100,
                   ),
                 ),
@@ -47,7 +48,7 @@ class _MenuState extends State<Menu> {
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.all(0.5),
                   fixedSize: Size.fromWidth(5),
-                  primary: Color.fromRGBO(248, 187, 237, 97),
+                  primary: Color.fromRGBO(241, 193, 233, 1),
                 ),
                 onPressed: () {
                   Navigator.push(context,
@@ -152,7 +153,7 @@ class _MenuState extends State<Menu> {
                     ),
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Menu())); //Cambiar
+                          MaterialPageRoute(builder: (context) => ingresarD())); //Cambiar
                     },
                     child: Image.asset(
                       'assets/IngresarD.png',
@@ -207,14 +208,14 @@ class _MenuState extends State<Menu> {
                   ClipPath(
                     clipper: WaveClipperB(),
                     child: Container(
-                      color: Color.fromRGBO(248, 187, 237, 97),
+                      color: Color.fromRGBO(241, 193, 233, 1),
                       height: 120,
                     ),
                   ),
                   ClipPath(
                     clipper: WaveClipperB(),
                     child: Container(
-                      color: Color.fromRGBO(110, 126, 228, 89),
+                      color: Color.fromRGBO(140, 151, 223, 1),
                       height: 100,
                     ),
                   ),

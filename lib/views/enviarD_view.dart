@@ -20,23 +20,20 @@ class EnviarD extends StatelessWidget {
                 ClipPath(
                   clipper: WaveClipper(),
                   child: Container(
-                    color: Color.fromRGBO(248, 187, 237, 97),
+                    color: Color.fromRGBO(241, 193, 233, 1),
                     height: 120,
                   ),
                 ),
                 ClipPath(
                   clipper: WaveClipper(),
                   child: Container(
-                    color: Color.fromRGBO(110, 126, 228, 89),
+                    color: Color.fromRGBO(140, 151, 223, 1),
                     height: 100,
                   ),
                 ),
               ],
             ),
-          ),
-          const SizedBox(
-            width:400,
-          ),       
+          ),      
           const SizedBox(
             height: 20,
           ),
@@ -219,29 +216,3 @@ class WaveClipper extends CustomClipper<Path> {
   bool shouldReclip(CustomClipper<Path> oldCliper) => false;
 }
 
-class WaveClipperB extends CustomClipper<Path> {
-  @override
-  Path getClip(Size size) {
-    debugPrint(size.width.toString());
-    var path = new Path();
-    path.lineTo(0, size.height);
-    var firstStart = Offset(size.width / 5, size.height);
-    var firstEnd = Offset(size.width / 2.25, size.height - 50.0);
-
-    path.quadraticBezierTo(
-        firstStart.dx, firstStart.dy, firstEnd.dx, firstEnd.dy);
-
-    var secondStart =
-        Offset(size.width - (size.width / 3.24), size.height - 105);
-    var secondEnd = Offset(size.width, size.height - 10);
-
-    path.quadraticBezierTo(
-        secondStart.dx, secondStart.dy, secondEnd.dx, secondEnd.dy);
-    path.lineTo(size.width, 0);
-    path.close();
-    return path;
-  }
-
-  @override
-  bool shouldReclip(CustomClipper<Path> oldCliper) => false;
-}
