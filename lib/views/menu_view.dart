@@ -44,6 +44,7 @@ class _MenuState extends State<Menu> {
             children: [
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.all(0.5),
                   fixedSize: Size.fromWidth(5),
                   primary: Color.fromRGBO(248, 187, 237, 97),
                 ),
@@ -70,9 +71,9 @@ class _MenuState extends State<Menu> {
             width: 300,
             child: Text(
               textAlign: TextAlign.center,
-              'Menu',
+              'Menú',
               style: GoogleFonts.bodoniModa(
-                  fontSize: 20, fontWeight: FontWeight.bold),
+                  fontSize: 30, fontWeight: FontWeight.bold),
             ),
           ),
           const SizedBox(
@@ -83,10 +84,21 @@ class _MenuState extends State<Menu> {
             children: <Widget>[
               Column(
                 children: [
-                  SizedBox(
-                    width: 80,
-                    height: 80,
-                    child: Image.asset('assets/EnviarD.png'),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(     
+                      padding: EdgeInsets.all(0.5),              
+                      fixedSize: Size.fromWidth(80),
+                      primary: Color.fromRGBO(248, 239, 198, 100),
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Menu())); //Cambiar
+                    },
+                    child: Image.asset(
+                      'assets/EnviarD.png',
+                      width: 80,
+                      height: 80,
+                    ),
                   ),
                   Text(
                     textAlign: TextAlign.center,
@@ -98,10 +110,21 @@ class _MenuState extends State<Menu> {
               ),
               Column(
                 children: [
-                  SizedBox(
-                    width: 80,
-                    height: 80,
-                    child: Image.asset('assets/RetirarD.png'),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(    
+                      padding: EdgeInsets.all(0.5),                
+                      fixedSize: Size.fromWidth(80),
+                      primary: Color.fromRGBO(248, 239, 198, 100),
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Menu())); //Cambiar
+                    },
+                    child: Image.asset(
+                      'assets/RetirarD.png',
+                      width: 80,
+                      height: 80,
+                    ),
                   ),
                   Text(
                     textAlign: TextAlign.center,
@@ -121,10 +144,21 @@ class _MenuState extends State<Menu> {
             children: <Widget>[
               Column(
                 children: [
-                  SizedBox(
-                    width: 80,
-                    height: 80,
-                    child: Image.asset('assets/IngresarD.png'),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(  
+                      padding: EdgeInsets.all(0.5),                   
+                      fixedSize: Size.fromWidth(80),
+                      primary: Color.fromRGBO(248, 239, 198, 100),
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Menu())); //Cambiar
+                    },
+                    child: Image.asset(
+                      'assets/IngresarD.png',
+                      width: 80,
+                      height: 80,
+                    ),
                   ),
                   Text(
                     textAlign: TextAlign.center,
@@ -136,10 +170,21 @@ class _MenuState extends State<Menu> {
               ),
               Column(
                 children: [
-                  SizedBox(
-                    width: 80,
-                    height: 80,
-                    child: Image.asset('assets/ConsultarD.png'),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.all(0.5),
+                      fixedSize: Size.fromWidth(80),
+                      primary: Color.fromRGBO(248, 239, 198, 100),
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Menu())); //Cambiar
+                    },
+                    child: Image.asset(
+                      'assets/ConsultarD.png',
+                      width: 80,
+                      height: 80,
+                    ),
                   ),
                   Text(
                     textAlign: TextAlign.center,
