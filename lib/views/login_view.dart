@@ -19,15 +19,15 @@ class LoginView extends StatelessWidget {
                 ClipPath(
                   clipper: WaveClipper(),
                   child: Container(
-                    color: Color.fromRGBO(248, 187, 237, 97),
+                    color: Color.fromRGBO(241, 193, 233, 1),
                     height: 150,
                   ),
                 ),
                 ClipPath(
                   clipper: WaveClipper(),
                   child: Container(
-                    color: Color.fromRGBO(110, 126, 228, 89),
-                    height: 130,
+                    color: Color.fromRGBO(140, 151, 223, 1),
+                    height: 120,
                   ),
                 ),
               ],
@@ -104,7 +104,7 @@ class LoginView extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               padding: EdgeInsets.all(15),
               fixedSize: Size.fromWidth(200),
-              primary: Color.fromRGBO(248, 187, 237, 97),
+              primary: Color.fromRGBO(241, 193, 233, 1),
             ),
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => Menu()));
@@ -114,7 +114,7 @@ class LoginView extends StatelessWidget {
               style: GoogleFonts.bodoniModa(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-                color: Color.fromRGBO(255, 255, 255, 20),
+                color: Color.fromRGBO(255, 255, 255, 1),
               ),
             ),
           ),
