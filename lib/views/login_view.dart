@@ -54,14 +54,14 @@ class LoginView extends StatelessWidget {
                     style: GoogleFonts.poppins(
                       fontSize: 15,
                       fontWeight: FontWeight.normal,
-                      color: Color.fromRGBO(0, 0, 0, 200),
+                      color: Color.fromRGBO(202, 202, 202, 1),
                     ),
                     decoration: InputDecoration(
                       hintText: 'Ingrese su usuario',
                       hintStyle: GoogleFonts.poppins(
                         fontSize: 15,
                         fontWeight: FontWeight.normal,
-                        color: Color.fromRGBO(0, 0, 0, 200),
+                        color: Color.fromRGBO(202, 202, 202, 1),
                       ),
                     ),
                   ))),
@@ -86,14 +86,14 @@ class LoginView extends StatelessWidget {
                     style: GoogleFonts.poppins(
                       fontSize: 15,
                       fontWeight: FontWeight.normal,
-                      color: Color.fromRGBO(0, 0, 0, 200),
+                      color: Color.fromRGBO(202, 202, 202, 1),
                     ),
                     decoration: InputDecoration(
                       hintText: 'Ingrese su contraseña',
                       hintStyle: GoogleFonts.poppins(
                         fontSize: 15,
                         fontWeight: FontWeight.normal,
-                        color: Color.fromRGBO(0, 0, 0, 200),
+                        color: Color.fromRGBO(202, 202, 202, 1),
                       ),
                     ),
                   ))),
