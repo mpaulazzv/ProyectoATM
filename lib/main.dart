@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_atm/views/login_view.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'ATM',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
       ),
       home: const LoginView(),
     );

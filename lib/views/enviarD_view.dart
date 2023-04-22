@@ -10,7 +10,6 @@ class EnviarD extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       backgroundColor: Color.fromRGBO(248, 239, 198, 100),
       body: Column(
         children: [
@@ -33,44 +32,44 @@ class EnviarD extends StatelessWidget {
                 ),
               ],
             ),
-          ),      
+          ),
           const SizedBox(
-            height: 20,
+            height: 40,
           ),
           Center(
             child: Text(
               'Envío de dinero',
               style: GoogleFonts.bodoniModa(
-                  fontSize: 30, fontWeight: FontWeight.bold),
+                  fontSize: 25, fontWeight: FontWeight.bold),
             ),
           ),
           const SizedBox(
-            height: 30,
+            height: 40,
           ),
           Center(
             child: SizedBox(
-              width: 400,
+              width: 320,
               child: Text(
                 'Nombre del destinatario: ',
                 style: GoogleFonts.bodoniModa(
-                    fontSize: 17, fontWeight: FontWeight.bold),
+                    fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
           ),
-          const SizedBox(height: 10),
           Center(
             child: SizedBox(
-              width: 400,
+              height: 35,
+              width: 320,
               child: TextField(
                 style: GoogleFonts.poppins(
-                  fontSize: 15,
+                  fontSize: 12,
                   fontWeight: FontWeight.normal,
                   color: Color.fromRGBO(202, 202, 202, 1),
                 ),
                 decoration: InputDecoration(
                   hintText: 'Ingrese el nombre del destinatario',
                   hintStyle: GoogleFonts.poppins(
-                    fontSize: 15,
+                    fontSize: 12,
                     fontWeight: FontWeight.normal,
                     color: Color.fromRGBO(202, 202, 202, 1),
                   ),
@@ -79,31 +78,31 @@ class EnviarD extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 30,
+            height: 40,
           ),
           Center(
             child: SizedBox(
-                width: 400,
+                width: 320,
                 child: Text(
                   'Nombre del destinatario: ',
                   style: GoogleFonts.bodoniModa(
-                      fontSize: 17, fontWeight: FontWeight.bold),
+                      fontSize: 15, fontWeight: FontWeight.bold),
                 )),
           ),
-          const SizedBox(height: 10),
           Center(
               child: SizedBox(
-            width: 400,
+            height: 35,
+            width: 320,
             child: TextField(
               style: GoogleFonts.poppins(
-                fontSize: 15,
+                fontSize: 12,
                 fontWeight: FontWeight.normal,
                 color: Color.fromRGBO(202, 202, 202, 1),
               ),
               decoration: InputDecoration(
                 hintText: 'Ingrese el número de cuenta destino',
                 hintStyle: GoogleFonts.poppins(
-                  fontSize: 15,
+                  fontSize: 12,
                   fontWeight: FontWeight.normal,
                   color: Color.fromRGBO(202, 202, 202, 1),
                 ),
@@ -111,41 +110,39 @@ class EnviarD extends StatelessWidget {
             ),
           )),
           const SizedBox(
-            height: 30,
+            height: 40,
           ),
           Center(
             child: SizedBox(
-                width: 400,
+                width: 320,
                 child: Text(
                   'Monto: ',
                   style: GoogleFonts.bodoniModa(
-                      fontSize: 17, fontWeight: FontWeight.bold),
+                      fontSize: 15, fontWeight: FontWeight.bold),
                 )),
           ),
-          const SizedBox(
-            height: 5,
-          ),
           Center(
-              child: SizedBox(
-            width: 400,
-            child: TextField(
-              style: GoogleFonts.poppins(
-                fontSize: 15,
-                fontWeight: FontWeight.normal,
-                color: Color.fromRGBO(202, 202, 202, 1),
-              ),
-              decoration: InputDecoration(
-                hintText: '\$0.00',
-                hintStyle: GoogleFonts.poppins(
-                  fontSize: 15,
+            child: SizedBox(
+              height: 30,
+              width: 320,
+              child: TextField(
+                style: GoogleFonts.poppins(
+                  fontSize: 12,
                   fontWeight: FontWeight.normal,
                   color: Color.fromRGBO(202, 202, 202, 1),
+                ),
+                decoration: InputDecoration(
+                  hintText: '\$0.00',
+                  hintStyle: GoogleFonts.poppins(
+                    fontSize: 12,
+                    fontWeight: FontWeight.normal,
+                    color: Color.fromRGBO(202, 202, 202, 1),
                 ),
               ),
             ),
           )),
           const SizedBox(
-            height: 15,
+            height: 50,
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -157,33 +154,24 @@ class EnviarD extends StatelessWidget {
             child: Text(
               'Enviar',
               style: GoogleFonts.bodoniModa(
-                  fontSize: 17, fontWeight: FontWeight.bold),
+                  fontSize: 15, fontWeight: FontWeight.bold),
             ),
           ),
           const SizedBox(
             height: 35,
           ),
-          Center(
-            child: SizedBox(
-                width: 380,
-                child: Text(
-                  'regresar',
-                  style: GoogleFonts.bodoniModa(
-                      fontSize: 17, fontWeight: FontWeight.bold),
-                )),
-          ),
         ],
       ),
-      floatingActionButton: FloatingActionButton.small(                             
-            backgroundColor: Color.fromARGB(255, 255, 180, 236),
-            elevation: 50,
-            focusElevation: 20,
-            onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Menu()));
-            },
-            child: Icon(Icons.arrow_back_ios_new), 
-          ),
+      floatingActionButton: FloatingActionButton.small(
+        backgroundColor: Color.fromARGB(255, 255, 180, 236),
+        elevation: 50,
+        focusElevation: 20,
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => Menu()));
+        },
+        child: Icon(Icons.arrow_back_ios_new),
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.miniStartFloat,
     );
   }
@@ -215,4 +203,3 @@ class WaveClipper extends CustomClipper<Path> {
   @override
   bool shouldReclip(CustomClipper<Path> oldCliper) => false;
 }
-

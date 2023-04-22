@@ -35,7 +35,7 @@ class ingresarD extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 40,
+              height: 50,
             ),
             Center(
               child: Text(
@@ -45,20 +45,17 @@ class ingresarD extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 100,
+              height: 60,
             ),
             Center(
               child: SizedBox(
                 width: 300,
                 child: Text(
-                  'Monto a ingresar',
+                  'Monto a ingresar:',
                   style: GoogleFonts.bodoniModa(
                       fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),
-            ),
-            const SizedBox(
-              height: 15,
             ),
             Center(
                 child: SizedBox(
@@ -79,7 +76,7 @@ class ingresarD extends StatelessWidget {
                       ),
                     ))),
             const SizedBox(
-              height: 25,
+              height: 60,
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -94,7 +91,7 @@ class ingresarD extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 60,
+              height: 50,
             ),
             Container(
               child: Transform.rotate(
